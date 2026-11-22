@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """news-image-20261122 entrypoint (Python 3.13, standard library only).
 
-The entry image is drawn at build time by draw_entry.py (kept outside this
+The entry image is drawn at build time by draw_entry_v2.py (kept outside this
 repository) and shipped here as entry.png: a one-page newspaper front page
 summing up Sunday 22 November 2026 -- COP31 deadlocked in overtime,
 the Sparta II still burning in the Baltic, the AI-assisted Riemann
@@ -17,7 +17,7 @@ import sys
 
 # sha256 of the entry.png shipped in this repository (filled in after the
 # image is drawn; the copy is refused if the bytes ever differ).
-EXPECTED_SHA256 = "92bc3fcd80a5e45d492d4a76b500b56e6d33f67f39696208748ee5f64833c6b7"
+EXPECTED_SHA256 = "e2230cb56b188712f7e9b5c72c7e18d90ea64bd54af9bc6a327702a49f943c00"
 
 MAX_BYTES = 1048576
 
